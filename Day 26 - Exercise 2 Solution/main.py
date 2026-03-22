@@ -1,3 +1,5 @@
+import time
+
 hour = int(time.strftime('%H'))
 
 if 5 <= hour < 12:
