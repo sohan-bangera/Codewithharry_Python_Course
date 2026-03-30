@@ -10,8 +10,6 @@ def encodingFun():
     ranDig = 3
 
     #intial random letters
-    ran=""
-
     ranStart = ""
     ranEnd = ""
     finalEncodedWord =""
@@ -20,10 +18,8 @@ def encodingFun():
     if(len(message) <= 3):
         reversed = message[::-1]
         return reversed
-    else:
-        firstLetter = message[0]
-        newName = message[1:]
-        newName = newName + firstLetter
+    else: 
+        newName = message[1:] + message[0]
         for i in range(ranDig):
             ranStart = ranStart + random.choice(string.ascii_letters)
             ranEnd = ranEnd + random.choice(string.ascii_letters)
