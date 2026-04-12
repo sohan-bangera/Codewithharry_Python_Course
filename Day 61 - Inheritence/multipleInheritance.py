@@ -20,3 +20,4 @@ class D(b,A):
 a1 = D()
 a1.info()
 print(D.__mro__)
+#it makes use of MRO which is method resolution order due to which diamond problem doesnt exist in python
